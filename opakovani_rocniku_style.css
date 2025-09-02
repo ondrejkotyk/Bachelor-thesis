@@ -1,0 +1,201 @@
+html,body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    max-width: 2000px;
+    overflow-x: hidden;
+    margin: auto;
+    position: relative;
+    background-color: #f5f7f8 !important;
+}
+h1, h2 {
+    text-align: center;
+    color: #bf0d0d;
+    text-shadow: 0 0 1px grey;
+}
+#maincontent {
+    padding: 1% 1% 1% 1%;
+    max-width: 1524px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-family: Verdana,sans-serif;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    min-width: 19%;
+    background-color: #9b0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+#preview img:hover {
+    transform: scale(4);
+    position:relative;
+    transition: transform .25s ease;
+    z-index: 10;
+    padding-right: 30%;
+}
+#form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+#year {
+
+    position: relative;
+}
+#tabulka {
+    margin-left: 2%;
+}
+.displaj {
+    position: relative;
+}
+.next ul {
+    width: 100%;
+    list-style-type: none;
+    margin-top: -1%;
+    background-color: white;
+    cursor: pointer;
+    color:black;
+    border: 2px solid black;
+    padding: 0;
+    z-index: 10;
+    position:absolute;
+}
+.next li {
+    text-align: left;
+    padding: 3% 3% 3% 3%;
+    font-size:15px;
+}
+.next hr {
+    border-top: 2px solid #bf0d0d;
+}
+.hidden {
+    display: none;
+}
+#add_subjects {
+    margin:auto;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    margin: 1% 41% 1% 41%;
+    font-size: 18px;
+}
+#add_subjects img {
+    float: left;
+}
+#add_subjects p {
+    padding-top: 4%;
+}
+#hint {
+    display: none;
+}
+#justsayin {
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    input[type=submit] {
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        position: relative;
+        margin: auto;
+        display: flex;
+    }
+    #preview {
+        display: none;
+    }
+    #add_subjects {
+        margin: 2% 20% 2% 20%;
+    }
+    #add_subjects p {
+        padding-top: 4%;
+    }
+    #add_subjects img {
+        margin-top: 6%;
+    }
+    #prvni {
+        display: grid;
+    }
+    #year {
+        width: 100%;
+    }
+    #blank {
+        display: none;
+    }
+    #tabulka {
+        position: relative;
+        margin: auto;
+    }
+    #hint {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+    }
+    .next {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .next:nth-child(odd) {
+        .div2 {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+    }
+    .next:nth-child(even) {
+        .div1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    }
+    #tabulka th {
+        display: none;
+    }
+    #tabulka td:nth-child(1) {
+        color: #bf0d0d;
+    }
+    #tabulka td:nth-child(2) {
+        color: #bf0d0d;
+    }
+    #tabulka td:nth-child(3) {
+        color: blue;
+    }
+    #tabulka td:nth-child(4) {
+        color: blue;
+    }
+    #red {
+        color: #bf0d0d;
+    }
+    #blue {
+        color: blue;
+    }
+    #justsayin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

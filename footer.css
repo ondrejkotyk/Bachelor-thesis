@@ -1,0 +1,36 @@
+#fot1
+{
+    background-color: #bf0d0d;
+    color: White;
+    text-shadow: 0 0 3px black;
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    margin-top: 2%;
+}
+#fot2
+{
+    background-color: #9b0000;
+    color: White;
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+}
+#fot1 a {
+    color: white;
+}
+.fa {
+  padding: 4px;
+  width: 70px;
+  border: solid 1px black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
